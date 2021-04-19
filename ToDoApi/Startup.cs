@@ -33,6 +33,9 @@ namespace ToDoApi
 
             app.UseHttpsRedirection();
             app.UseRouting();
+            //Added for the static pages (Calling the API From JavaScript)
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseAuthorization();
 
